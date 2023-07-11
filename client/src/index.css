@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .navbar-items {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-items p {
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #343a40;
+  }
+  
+  .navbar-logout {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .logout-link {
+    margin: 0;
+    color: #dc3545;
+    cursor: pointer;
+  }
+
+  /* POSTS */
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .profile-posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .new-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .new-post-container h1 {
+    margin: 20px 0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .input-field input, .input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+
+  .post-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .post-title {
+    margin-bottom: 20px;
+  }
+  
+  .author-handle {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .post-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .post-date {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-username {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-handle {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .signin-title {
+    margin-bottom: 20px;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .signin-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signin-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signin-alt {
+    color: #888;
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .signup-title {
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signup-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-alt {
+    color: #888;
+  }
+  
+  .post-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+}
+
+.author-handle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.post-date {
+  color: #777;
+  font-size: 14px;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.username {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.handle-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.handle-link:hover {
+  text-decoration: underline;
+}
+
+.post-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.view-post {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.view-post:hover {
+  text-decoration: underline;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+@keyframes modalOpen {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.modal-container {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation-name: modalOpen;
+    animation-duration: .3s;
+    z-index: 100;
+}
+
+.modal-content-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    transform: opacity(0);
+    animation: modal-content-open 0.5s forwards;
+}
+
+@keyframes modal-content-open {
+  100% {
+    transform: opacity(1);
+  }
+}
+
+.modal-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.edit-save-button, .edit-cancel-button, .edit-delete-account-button, .edit-account-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.edit-account-button {
+  background: #007bff;
+  color: white;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.edit-save-button {
+  background: green;
+  color: white;
+}
+
+.edit-cancel-button {
+  background: #ccc;
+  color: black;
+}
+
+.edit-delete-account-button {
+  background: red;
+  color: white;
+}
+  
+
+/* Basic styling */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-items,
+.navbar-logout,
+.nav-link,
+.logout-link {
+  margin: 0px 10px;
+}
+
+/* Mobile responsive styling */
+@media screen and (max-width: 450px) {
+  .navbar{
+    flex-direction: column;
+  }
+   
+  .navbar-items,
+  .navbar-logout {
+    margin: 10px 0px;
+  } 
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

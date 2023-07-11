@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "alchemy-sdk": "^2.9.2"
+  },
+  "name": "web3-lecture",
+  "description": "For this homework, use the smart contacts given to you and upload them to the  [Remix IDE](https://remix.ethereum.org/). Compile(make sure your Solidity version is correct) and deploy your token. Once deployed, make sure to get the token showing in your [Metamask wallet](https://metamask.io/).",
+  "version": "1.0.0",
+  "main": "myToken.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

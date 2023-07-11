@@ -1,0 +1,38 @@
+POST http://127.0.0.1:8000/signup/
+Content-Type: application/json
+
+{ "username": "IronPioneer", "password": "password", "email": "ironpioneer@mail.com", "handle": "Pioneer" }
+###
+
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{ "username": "user", "password": "password" }
+
+###
+
+POST http://127.0.0.1:8000/posts/
+Content-Type: application/json
+
+{ "text": "There are no roadblocks, only challenges to overcome for this pioneer.", "author_id": 10 }
+###
+
+PATCH /users/user/ HTTP/1.1
+Host: 127.0.0.1:8000
+Content-Type: application/json
+Authorization: token xxx
+
+{
+    "username":"updatedUser"
+}
+
+
+###
+GET http://127.0.0.1:8000/test_token 
+Content-Type: application/json 
+Authorization: token xxx
+
+###
+
+DELETE http://127.0.0.1:8000/posts/id
+Authorization: token xxx
