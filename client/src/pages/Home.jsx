@@ -26,7 +26,7 @@ export default function Home() {
           <div/>
           :
           posts.length > 0 ? 
-            posts.map(post => (
+            [...posts].reverse().map(post => (
               <Post
                 key={post.id}
                 id={post.id}
@@ -46,5 +46,4 @@ export default function Home() {
       }
     </div>
   );
-  
 }
